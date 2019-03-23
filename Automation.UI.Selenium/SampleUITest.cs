@@ -24,7 +24,7 @@ namespace Automation.UI.Selenium
             driver.FindElementByName("q").SendKeys("MSFT");
             driver.FindElementByName("btnK").Submit();
 
-            Assert.IsTrue(driver.FindElementById("knowledge-finance-wholepage__entity-summary").Text.Contains("NASDAQ: MSFT"));
+            Assert.IsTrue(driver.FindElementById("knowledge-finance-wholepage__entity-summary").Text.Contains("NASDAQ: Microsoft"));
         }
 
         [TestCleanupAttribute]
